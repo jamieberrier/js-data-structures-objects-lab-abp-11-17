@@ -26,10 +26,8 @@ function deleteFromDriverByKey(driver, key){
 //modifies the original driver
 function destructivelyDeleteFromDriverByKey(driver, key){
 
-  let newdriver = 'key';
+  delete driver.key;
 
-  delete newdriver.key;
-
-  return newdriver;
+  return driver;
 
 }
