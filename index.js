@@ -25,8 +25,10 @@ function deleteFromDriverByKey(driver, key){
 //returns driver without the delete key/value pair
 //modifies the original driver
 function destructivelyDeleteFromDriverByKey(driver, key){
+  
+  const newdriver = key;
 
-  const newdriver = delete driver.key;
+  delete newdriver.key;
 
   return newdriver;
 
