@@ -18,7 +18,7 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
 //deletes `key` from a clone of driver and returns the new driver (it is non-destructive)
 function deleteFromDriverByKey(driver, key){
 
-  const newdriver = Object.assign(driver);
+  const newdriver = Object.assign(...driver);
 
   delete newdriver.key;
 
